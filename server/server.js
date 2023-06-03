@@ -88,6 +88,7 @@ app.post("/videos", async (req, res) => {
   const videoTitle = req.body.title;
   const videoUrl = req.body.url;
   const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+/;
+  /////
 
   if (videoTitle === "") {
     return res
