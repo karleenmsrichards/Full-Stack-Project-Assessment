@@ -90,12 +90,10 @@ export const AllVideos = ({ isDesc, setIsDesc, fetchData }) => {
       .catch((error) => alert(error.message));
   }
 
-  useEffect(() => {
-    console.log(isDesc);
-  }, [isDesc]);
+  useEffect(() => {}, [isDesc]);
 
   return (
-    <div>
+    <div className="all-videos-container">
       <h2 className="all-videos-title">Videos</h2>
       <div className="all-videos-filter-wrapper">
         <button
@@ -119,7 +117,7 @@ export const AllVideos = ({ isDesc, setIsDesc, fetchData }) => {
           }
         />
       </div>
-      <div className="all-videos-container">
+      <div className="all-videos-wrapper">
         {videos?.map((video) => {
           return (
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">

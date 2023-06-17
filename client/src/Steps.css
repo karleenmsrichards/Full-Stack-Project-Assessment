@@ -1,7 +1,6 @@
 .steps-wrapper {
     z-index: -50;
     width: 100%;
-    margin-top: -100px;
     padding: 40px 40px 80px 40px;
     display: flex;
     flex-direction: column;
@@ -10,12 +9,18 @@
     border: .5px solid #fcd277;
 }
 
+@media only screen and (min-width: 768px) {
+    .steps-wrapper {
+        width: 110%;
+    }
+}
+
 .steps-title {
     font-size: 24px;
     color: #e4e0e0;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 540px) {
     .steps-title {
         font-size: 34px;
         color: #e4e0e0;
@@ -27,6 +32,12 @@
     align-items: center;
     gap: 10px;
     padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 540px) {
+    .steps-section-wrapper  {
+        width: 90%;
+    }
 }
 
 

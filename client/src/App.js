@@ -11,6 +11,7 @@ import { HomeHero } from "./HomeHero";
 import { Steps } from "./Steps";
 import { About } from "./About.js";
 import { AboutPage } from "./AboutPage";
+import { Footer } from "./Footer";
 
 export let videosContext = createContext(null);
 
@@ -63,6 +64,7 @@ function App() {
                       fetchData={fetchData}
                     />
                   )}
+                  <Footer />
                 </div>
               }
             />

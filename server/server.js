@@ -28,7 +28,7 @@ app.get("/videos", async (req, res) => {
       query += " ORDER BY ratings";
     }
     const allVideos = await videosPool.query(query);
-    res.json(allVideos.rows);
+    res.status(200).json(allVideos.rows);
   } catch (error) {
     console.log(error);
     res.status(500).send(error.message);
@@ -126,7 +126,7 @@ app.post("/videos", async (req, res) => {
     );
 
     const newVideo = insertedVideo.rows[0];
-    return res.json(newVideo);
+    return res.status(201).json(newVideo);
   } catch (error) {
     console.log(error);
     return res.status(500).send(error.message);

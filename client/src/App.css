@@ -5,11 +5,17 @@
   padding: 60px 20px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) {
   .steps-form-wrapper {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    padding: 0 100px 150px 140px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .steps-form-wrapper {
+    padding: 100px;
   }
 }
 
@@ -29,9 +35,8 @@
   padding: 40px 30px 50px 30px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) {
   .home-form{
-    margin-left: -120px;
     padding: 40px;
   }
 }
@@ -48,7 +53,7 @@ legend {
   margin: 0;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 540px) {
   legend {
     text-align: center;
   }
@@ -76,6 +81,12 @@ legend {
   color: white;
   border-radius: 5px;
   padding: 8px;
+}
+
+@media only screen and (min-width: 540px) {
+  .home-form-btn {
+    width: 30%;
+  }
 }
 
 .home-form-btn:hover {
