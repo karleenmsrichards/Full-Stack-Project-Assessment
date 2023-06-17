@@ -53,7 +53,7 @@ function App() {
                   <HomeHero />
                   <About />
                   <Main />
-                  <div className="steps-form-wrapper">
+                  <div id="addvideo" className="steps-form-wrapper">
                     <Steps />
                     <AddVideoForm />
                   </div>
