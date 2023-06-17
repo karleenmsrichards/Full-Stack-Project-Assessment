@@ -1,16 +1,14 @@
+
 footer {
-    display: none;
+    color: #c2b8b8;
+    text-align: center;
+    padding: 3px;
 }
+
 
 span {
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 540px) {
-    footer {
-        display: block;
-        color: #c2b8b8;
-        text-align: center;
-        padding: 60px 0 20px 0;
-    }
-} 
+
+  
